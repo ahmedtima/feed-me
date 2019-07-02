@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css">
+    <title>Feed-Me</title>
+    <link rel="shortcut icon" href="./img/photo-1531206715517-5c0ba140b2b8.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html"><img src="./img/photo-1531206715517-5c0ba140b2b8.jpg" alt="" height="50px" width="50px"></a>
+        <h3>Feed-Me</h3> 
+        <div class="nav">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="index.html" >Home</a>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="About.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="modal" data-target="#exampleModal">Donate</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#summary">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+        </div>
+    </nav>
+    <div id="carousel-container">
+      <div class="bd-example">
+        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./img/orphans-411949_1920.jpg" id="slide-item" class="d-block w-100 bg-dark" alt="..." height="700px" width="400px">
+              <div class="carousel-caption d-none d-md-block">
+                <h1>Feed-Me.</h1>
+                <p>Together, we can eradicate poverty.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./img/photo-1531206715517-5c0ba140b2b8.jpg" id="slide-item" class="d-block w-100" alt="..." height="700px" width="400px">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Everyone deserves to be happy.</h5>
+                <p>Let's put a smile on someone's face together.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./img/girl-3717166_1920.jpg" id="slide-item" class="d-block w-100" alt="..."height="700px" width="400px">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Let's end hunger together.</h5>
+                <p>5.1 million Nigerians are malnourished.</p>
+              </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div id="how-to-container">
+      <div id="how-to">
+        <h1>How it works</h1>
+      </div>
+      <div class="row center">
+        <div class="col-md-4">
+          <div class="card" id="how-to-card">
+            <div class="icon">
+              <i class="fas fa-donate fa-3x"></i>
+            </div>
+            <div class="card-body">
+              <p class="card-text">Donate food stuffs which could be raw foods or cooked food. All donation are welcomed.</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-4">
+          <div class="card" id="how-to-card">
+            <div class="icon">
+              <i class="fas fa-truck fa-3x"></i>
+            </div>
+            <div class="card-body">
+              <p class="card-text">You can either choose to deliver your donation to our office or we come pick up your donations.</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-4">
+          <div class="card" id="how-to-card">
+            <div class="icon">
+              <i class="fas fa-people-carry fa-3x"></i>
+            </div>
+            <div class="card-body">
+              <p class="card-text">We utilize your donations efficiently by ensuring we feed the needy, thus eradicating poverty.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+  <div id="start-donating-container">
+    <!-- Button trigger modal -->
+    <button type="button" id="start-donating" data-toggle="modal" data-target="#exampleModal">
+      Start donating
+    </button>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Make donations</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body" style="width: 80%; margin: auto;">
+            <div id="form-inputs">
+              <input type="text" id="name" placeholder="Name" title="Enter your name">
+              <input type="email" id="email" placeholder="Email" title="Enter your email">
+              <textarea id="address" placeholder="Enter Address" title="Enter your address"></textarea>
+            </div>
+            <div id="type-of-food">
+              <p>What type of food do you want to donate? </p>
+              <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="cooked-food" checked>
+                  <label class="form-check-label" for="cooked-food">
+                    Cooked food
+                  </label>
+                </div>
+              <div class="form-check">
+                <input type="checkbox" id="raw-food" class="form-check-input">
+                <label class="form-check-label" for="raw-food">
+                  Raw food
+                </label>
+              </div>
+            </div>
+            <div id="type-of-delivery">
+                <p>How do you want to donate? </p>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="delivery" id="delivery" checked>
+                <label class="form-check-label" for="delivery">
+                  Deliver to our office
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="delivery" id="pickup">
+                <label class="form-check-label" for="pickup">
+                  Pick-up at your residence
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer" style="justify-content: center;">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+            <button type="button" class="btn btn-primary" data-dismiss="modal">Donate</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- <div id="about-section">
+    <h3>Feed-Me</h3>
+    <p>1 in 8 people in Nigeria are hungry, And there are people who wish to donate but don't know how to get the food to the poor or
+       don't have the time. Donate Food Now is a means for people who want to help end poverty get access to People who are in need.</p>
+  </div> -->
+
+  <section>
+    <div id="summary">
+        <div id="address">
+          <h2>Contact Us</h2>
+          <div class="locate-us">
+            <span class="icon">
+              <i class="fas fa-map-marker-alt fa-2x"></i>
+            </span>
+            <p>Address: 952/953, Idejo Street, Victoria Island, Lagos.</p>
+          </div>
+          <div class="locate-us">
+            <span class="icon">
+              <i class="fas fa-envelope fa-2x"></i>
+            </span>
+            <p>Email: Donatefoodnow@outlook.com</p>
+          </div>
+          <div class="locate-us">
+            <span class="icon">
+              <i class="fas fa-phone fa-2x"></i>
+            </span>
+            <p>Phone: +234 (809)-080-1071</p>
+          </div>
+        </div>
+        <div id="services">
+          <h2>Services</h2>
+          <p>Pick up Food</p>
+          <p>Deliver Food to the Needy</p>
+          <p>Ending Humger</p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <p>&copy;2019 Feed-Me.</p>
+      <P>Made by Ahmed Fatima</P>
+    </footer>
+  <script src="./js/jquery-3.4.1.min.js"></script>
+  <script src="./js/bootstrap.js"></script>  
+</body>
+</html>

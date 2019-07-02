@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+
+body{
+    background: #c7b198;
+    color: #596e79;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.nav{
+  text-align: right;
+justify-content: right;  
+}
+
+img{
+    max-width: 100%;
+    flex-wrap: wrap;
+}
+#carousel-container{
+    margin-top: 3em;
+}
+
+.carousel-inner h3{
+    justify-content: center;
+    text-align: center;  
+    background-color: #596e79;
+    color: black; 
+}
+.carousel-caption h1{
+    color: rgb(129, 11,11)
+}
+.icon{
+    margin: 0.4em 0;
+    text-align: center;
+}
+#how-to{
+    text-align: center;
+    margin-bottom: 1.4em;
+}
+#how-to-container{
+    width: 80%;
+    margin: auto;
+    margin-top: 2em;
+}
+#how-to-card{
+    margin: 0.3em;
+    padding: 0.8em;
+}
+.carousel-item:after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,0.5);
+}
+
+#start-donating-container{
+    margin: 2em;
+    text-align: center;
+}
+#start-donating{
+    font-family: 'Roboto Condensed', sans-serif;
+    padding: 0.5em;
+    color: white;
+    background: #596379;
+    border-radius: 8px;
+    font-size: 1em;
+}
+#form-inputs{
+    text-align: center;
+}
+
+#type-of-delivery p, #type-of-food p {
+    margin: 0;
+    margin-top: 0.5em;
+}
+
+#name, #email, #address, #phone-number{
+    padding: 0.2em;
+    outline: none;
+    width: 100%;
+    margin-bottom: 0.5em;
+}
+
+#modal-footer-container{
+    text-align: center;
+}
+/* #about-section{
+    background-color: #596e79;
+    color: white;
+} */
+#about-section h3{
+    text-align: center;
+}
+#summary {
+    padding: 1em;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .locate-us {
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+  .locate-us .icon {
+    margin: 0.5em;
+    margin-right: 1.3em;
+  }
+  
+  .locate-us p {
+    align-self: center;
+    justify-content: left;
+  }
+  
+  #address h2, 
+  #services h2,
+  #services p {
+    margin: 0.5em;
+    font-size: 1.8em;
+  }
+
+  #services p {
+    font-size: 1.3em;
+  }
+  
+  #services {
+    text-transform: capitalize;
+    width: 50%;
+  }
+
+  footer{
+      background-color: #596e79;
+      color: white;
+      justify-content: center;
+      text-align: center; 
+  }
